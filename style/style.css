@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    scrollbar-width: none;
+}
+
+/*  custom variable */
+:root {
+    --primary-font: "Playfair", sans-serif;
+    --text-font: "Poppins", sans-serif;
+    --color-white: #fff;
+    --color-black: #000;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--primary-font);
+}
+
+body {
+    font-family: var(--text-font);
+}
+
+.btn1 {
+    all: unset;
+    background: var(--color-white);
+    color: var(--color-black);
+    font-size: inherit;
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    transition-property: all;
+    transition-duration: 300ms;
+    transition-timing-function: ease-out;
+    cursor: pointer;
+}
+
+
+.btn1:hover {
+    transform: translateY(-2px);
+    box-shadow: 2px 3px 6px rgba(255, 255, 255, 0.6);
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+
+/* main header styling  */
+.main_heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-white);
+    padding: 0.8em 1.5em;
+    font-size: 1rem;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+}
+
+
+.main_heading_nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1em;
+    font-size: inherit;
+    /* border: 1px solid white; */
+}
+
+
+
+
+/*  --------------------------------------------------------------- */
+
+
+
+/* main section/ banner section styling */
+
+.banner_section {
+    min-height: 100vh;
+    background: var(--color-black) url(../assets/banner_bg.png)no-repeat;
+    background-position: 10% 0%;
+    background-size: cover;
+    /* filter: brightness(80%); */
+    color: var(--color-white);
+    position: relative;
+}
+
+.banner_section_container {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* border: 1px solid white; */
+}
+
+.banner_section_heading {
+    font-size: 2.5rem;
+    max-width: 80%;
+    width: 100%;
+    padding: 0.2em 0;
+    margin: 10vh auto;
+}
+
+.banner_section_content {
+    max-width: 80%;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1rem;
+}
+
+.banner_section_content p {
+    max-width: 45%;
+    font-size: 1.2rem;
+    margin-bottom: 0.8em;
+}
